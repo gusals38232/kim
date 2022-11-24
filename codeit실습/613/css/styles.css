@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  /* 로보토가 없을시 다음 폰트 사용해라 */
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: gray;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 60px;
+}
+
+.banner {
+  width: 100%;
+  height: 350px;
+  background-image: url('/codeit실습/613/images/img1.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.info {
+  width: 100%;
+  height: 320px;
+  background-color: rgb(251, 251, 248);
+
+}
+
+.info.helper {
+  display: inline-block;
+  height: 100%;
+
+
+  vertical-align: middle;
+}
+
+.info .info-container {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  vertical-align: middle;
+}
+
+.info .label {
+  font-size: 15px;
+  color: rgb(35, 21, 4);
+}
+
+.info h2 {
+  font-size: 20px;
+  color: #1b1b1b;
+}
+
+.info p {
+  font-size: 16px;
+  color: #7a7a7a;
+  margin: 0;
+}
+
+.img-div1 {
+  width: 100%;
+  height: 385px;
+  background-image: url(/codeit실습/613/images/img2.jpg);
+  background-size: cover;
+  background-position: center top;
+
+}
+
+.img-div2 {
+  width: 100%;
+  height: 200px;
+  background-image: url(/codeit실습/613/images/img3.jpg);
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+
+}
+
+.img-div2 a {
+  color: white;
+  font-weight: bold;
+  border: 4px solid white;
+  padding: 9px 40px;
+  /* 위아래 9 양옆 40 */
+  text-decoration: none;
+
+}
+
+.img-div2 .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+
+}
+
+.img-div3 {
+  width: 100%;
+  height: 200px;
+  background-color: grey;
+}
+
+/* tablet size */
+@media(min-width: 768px) {
+
+  .col {
+    float: left;
+  }
+
+  .banner {
+    height: 562px;
+  }
+
+  .info {
+    height: 282px;
+  }
+
+  .info .info-container {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .img-div1 {
+    width: 50%;
+    height: 360px;
+  }
+
+  .img-div2 {
+    width: 50%;
+    height: 180px;
+  }
+
+  .img-div3 {
+    width: 50%;
+    height: 180px;
+  }
+}
+
+/* desktop size */
+
+@media(min-width: 992px) {
+  .banner {
+    width: 50%;
+    height: 700px;
+  }
+
+  .info {
+    width: 50%;
+    height: 350px;
+  }
+
+  .img-div1 {
+    width: 25%;
+    height: 350px;
+  }
+
+  .img-div2 {
+    width: 25%;
+    height: 350px;
+  }
+
+  .img-div3 {
+    width: 25%;
+    height: 175px;
+  }
+}

@@ -1,0 +1,18 @@
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* 너비가 768px가 넘기면 적용 */
+@media(min-width:768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+}
